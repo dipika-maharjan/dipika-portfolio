@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-list{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: right;
+    gap: 3rem;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-right: 8rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.102);
+    list-style: none;
+}
+
+.navbar-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-list li a:hover{
+    color: #4F46E5;
+    text-decoration: underline;
+}
