@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+}
+
+.about-me{
+    height: 26rem;
+    width: 45%;
+    background-color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+}
+
+.about-me p{
+    margin-top: 1rem;
+}
+
+.about-me h4{
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .about-me {
+    width: 90%;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .about-me h4 {
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+}
