@@ -88,9 +88,11 @@
 
 .hero-icon .MuiButton-contained {
   background: linear-gradient(#105FBC 30%, #357ABD 99%);
+  width: 12rem;
   text-transform: none;
   color: white;
   border-radius: 18px;
+  transform: translateY(-2px); 
 }
 
 @media (max-width: 768px) {

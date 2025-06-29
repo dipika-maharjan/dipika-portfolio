@@ -19,7 +19,7 @@ export default function Projects(){
                             <h4>Weather App</h4>
                             <img src = {weatherImage} alt = "weather img"/>
                             <p>A responsive weather dashboard built using React. 
-                                Fetches real-time weather data via OpenWeather API, with clean UI and component-based structure.</p>
+                                Fetches real-time weather data via OpenWeather API.</p>
                                 <br></br>
                                 <p><strong>Tools Used:</strong> React, API</p>
                             <button>View Project</button>
