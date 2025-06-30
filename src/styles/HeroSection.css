@@ -1,8 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .hero-section{
     height: 24rem;
     width: 100%;
     margin-top: 0.75rem;
-    background-color: #F0F4F8;
+    background: linear-gradient(90deg, #DDE3E8 0%, #CBD0D3 100%);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -26,21 +34,40 @@
     margin-bottom: 2rem;
 }
 
-.hero-content Button{
-    background: linear-gradient( #105FBC 30%, #357ABD 99%);
-    background-color: transparent;
-    height: 3rem;
-    width: 8rem;
-    border-radius: 18px;
-    color: white;
-    box-shadow: none;
-    text-transform: none;
+.hero-button{
+  display: flex;
+  gap: 1rem; /* Space between buttons */
 }
 
-.hero-content Button:hover{
-    background: linear-gradient( #357ABD 30%, #105FBC 99%);
-    background-color: transparent;
-    box-shadow: none;
+.download-btn{
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 12px;
+  background-color: #357ABD;
+  color: white;
+  border: none;
+}
+
+.download-btn:hover{
+  background-color: #1057bc;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.contact-btn{
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 12px;
+  background-color: #F8F9FA;
+  color: black;
+  border: #333 solid 1.85px;
+}
+
+.contact-btn:hover{
+  background-color: #e2e3e5;
+  cursor: pointer;
+  transform: translateY(-2px);
+
 }
 
 .hero-image img{
@@ -71,13 +98,28 @@
   }
 }
 
-.hero-icon{
-    margin-top: 2rem;
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    margin-right: 17rem;
+.hero-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.hero-icon {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-subtext {
+  margin-top: 25px;
+  font-size: 1rem;
+  color: #333;
+  white-space: nowrap;
 }
 
 .hero-icon a{
@@ -86,14 +128,19 @@
     transition: transform 0.2s ease-in-out;
 }
 
-.hero-icon .MuiButton-contained {
+.hero-icon a:hover{
+  color: #534e4e;
+  transform: translateY(-2px);
+}
+
+/* .hero-icon .MuiButton-contained {
   background: linear-gradient(#105FBC 30%, #357ABD 99%);
   width: 12rem;
   text-transform: none;
   color: white;
   border-radius: 18px;
   transform: translateY(-2px); 
-}
+} */
 
 @media (max-width: 768px) {
   .hero-icon {

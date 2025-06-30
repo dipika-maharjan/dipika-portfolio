@@ -3,6 +3,11 @@ import '../styles/About.css';
 export default function About(){
     return(
         <section className='about-container'>
+
+            <div className="about-quote">
+                <p>“Where logic meets aesthetics — I craft every pixel with purpose <br></br>and every line of code with care to build experiences <br></br>that feel as effortless <br></br>as they look.”</p>
+            </div>
+
             <div className='about-me'>
                 <h3>About Me</h3>
                 <p>
@@ -19,6 +24,7 @@ export default function About(){
                 <h4>My goals?</h4>
                 <p>To grow into a developer who not only writes clean code but also understands people behind the screen.</p>
             </div>
+
         </section>
     )
 }

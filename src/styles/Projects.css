@@ -7,7 +7,7 @@
 .projects-container{
     height: auto;
     width: 100%;
-    background-color: #F4F2F8;
+    background-color: #F8F9FA;
 }
 
 .projects-content{
@@ -21,6 +21,11 @@
 .projects-content h3{
     margin-top: 10px;
     margin-bottom: 6px;
+}
+
+.projects-content i{
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .project-box{

@@ -15,27 +15,37 @@ export default function HeroSection(){
 
         <p>Aspiring Front-End Developer & UI/UX Enthusiast</p>
 
+        <div className="hero-button">
+          <button className='download-btn'>Download Resume <i class="fa-solid fa-download"></i></button>
+          <button className='contact-btn'>Contact</button>
+        </div>
+
+        {/* <Button variant="contained" endIcon={<FileDownloadIcon />} href='/assets/Resume.pdf'>Download Resume</Button>
+
         <Button
           variant="contained"
-          endIcon={<KeyboardArrowDownIcon />}>About Me
-        </Button>      
+          endIcon={<KeyboardArrowDownIcon />}>Contact
+        </Button>   */}
 
 
-        <div className='hero-icon'>
-          <a href="mailto:maharjandipika49@gmail.com" target="_blank" rel="email">
-            <EmailIcon fontSize="large" />
-          </a>
+        <div className='hero-icon-wrapper'>
+          <div className='hero-icon'>
+            <a href="mailto:maharjandipika49@gmail.com" target="_blank" rel="email">
+              <EmailIcon fontSize="large" />
+            </a>
 
-          <a href="https://github.com/dipika-maharjan" target="_blank" rel="github">
-            <GitHubIcon fontSize="large" />
-          </a>
+            <a href="https://github.com/dipika-maharjan" target="_blank" rel="github">
+              <GitHubIcon fontSize="large" />
+            </a>
 
-          <a href="https://www.linkedin.com/in/dipika-maharjan-50b019291/" target="_blank" rel="linkedin">
-            <LinkedInIcon fontSize="large" />
-          </a>
+            <a href="https://www.linkedin.com/in/dipika-maharjan-50b019291/" target="_blank" rel="linkedin">
+              <LinkedInIcon fontSize="large" />
+            </a>
+          </div>
 
-          <Button variant="contained" endIcon={<FileDownloadIcon />} href='/assets/Resume.pdf'>Download Resume</Button>
-        </div>   
+          <p className='hero-subtext'>5+ Projects Built • React & Figma • Currently Learning</p>
+        </div>
+
       </div>
 
         <div className="hero-image">

@@ -31,6 +31,11 @@
     line-height: 1.5rem;
 }
 
+.skills-heading i{
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
 .skills-content {
     display: flex;
     flex-wrap: wrap;

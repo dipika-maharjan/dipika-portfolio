@@ -1,54 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.about-container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    padding: 1rem;
+.about-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.about-me{
-    height: 26rem;
-    width: 45%;
-    background-color: #FAF9F6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-
+/* Left Side - Quote */
+.about-quote {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-right: 2rem;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-.about-me p{
-    margin-top: 1rem;
+.about-quote p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.7;
 }
 
-.about-me h4{
-    align-self: flex-start;
+/* Right Side - About Me */
+.about-me {
+  width: 45%;
+  background-color: #F8FAFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+.about-me p {
+  margin-top: 1rem;
+  color: black;
+  line-height: 1.6;
+}
+
+.about-me h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-me h4 {
+  margin-top: 1rem;
+  font-style: bold;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 2rem;
   }
 
-  .about-me {
-    width: 90%;
-    height: auto;
-    padding: 1.5rem;
+  .about-me,
+  .about-quote {
+    width: 100%;
   }
 
-  .about-me h4 {
-    justify-content: flex-start;
+  .about-quote {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .about-me h4,
+  .about-me h3 {
     width: 100%;
     text-align: left;
   }

@@ -10,7 +10,7 @@ export default function Projects(){
     return(
         <section className="projects-container">
             <div className="projects-content">
-                <h3>Projects I've Built</h3>
+                <h3><i class="fa-solid fa-file-code"></i>Projects I've Built</h3>
                 <p>Here’s a glimpse into what I’ve been building — from fun mini tools to frontend projects and user-first designs.</p>
                 <br></br>
                 <div className='project-card'>

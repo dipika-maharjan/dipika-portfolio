@@ -12,7 +12,7 @@ export default function Skills(){
     return(
         <section className="skills-container">
             <div className="skills-heading">
-                <h3>Skills</h3>
+                <h3><i class="fa-solid fa-laptop-code"></i>Skills</h3>
                 <p>What I work with</p>
             </div>
 
