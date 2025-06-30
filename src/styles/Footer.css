@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer-container {
-  height: 8rem;
+  height: 12rem;
   width: 100%;
   position: relative;
   background-color: #34495E;
@@ -8,39 +14,80 @@
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
+
+  /* Animation on load */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer-content {
-display: flex;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .footer-links {
-  position: absolute;    
-  right: 3rem;            
-  top: 50%;               
+  position: absolute;
+  right: 3rem;
+  top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: right;  
+  align-items: flex-start; /* ✅ Align links left */
   gap: 0.5rem;
 }
 
-
 .footer-links a {
+  display: flex;
+  align-items: center;
   color: white;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.3s ease;
-  margin-right: 4rem;
+  /* Removed margin-right to keep it aligned straight */
 }
 
 .footer-links i {
-    margin-right:0.5rem;
+  margin-right: 0.5rem;
 }
 
 .footer-links a:hover {
   color: #ddd;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .footer-content {
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    position: static;
+    transform: none;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    margin-right: 0;
+  }
 }

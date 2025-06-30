@@ -13,7 +13,7 @@ export default function Skills(){
         <section className="skills-container">
             <div className="skills-heading">
                 <h3><i class="fa-solid fa-laptop-code"></i>Skills</h3>
-                <p>What I work with</p>
+                <p>“Key skills and technologies I apply to bring ideas to life through intuitive design and code.”</p>
             </div>
 
             <div className="skills-content">

@@ -6,11 +6,11 @@
 
 .skills-container{
     height: auto;
-    width: 85rem;
+    width: 88rem;
     max-width: 100%;
     border-radius: 16px;
     margin: 1.5rem auto;
-    background-color: #F7F8FA;
+    background-color: #F4F7FA;
     padding: 2rem;
 
 }
@@ -21,18 +21,18 @@
 }
 
 .skills-heading h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1rem;
     margin-bottom: 1rem;
 }
 
 .skills-heading p{
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
 
 .skills-heading i{
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
     font-size: 1.5rem;
 }
 
@@ -49,19 +49,74 @@
 .skills {
     flex: 0 0 120px; /* Fixed width (4 per row) */
     height: 120px;
-    background-color: #D9D9D9;
+    background-color: #2C3E50;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
+/* Staggered animation delays */
+.skills:nth-child(1) { animation-delay: 0.35s; }
+.skills:nth-child(2) { animation-delay: 0.5s; }
+.skills:nth-child(3) { animation-delay: 0.65s; }
+.skills:nth-child(4) { animation-delay: 0.8s; }
+.skills:nth-child(5) { animation-delay: 0.95s; }
+.skills:nth-child(6) { animation-delay: 1.1s; }
 
+.skills:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.skills:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+    cursor: pointer;
+}
 .skills img {
     height: 85px;
     width: auto;
     object-fit: contain;
     border-radius: 8px;
+}
+
+.skills img:hover{
+    transform: translateY(-5px);
+}
+
+@media (max-width: 480px) {
+  .skills-content {
+    gap: 1rem 1.5rem;
+  }
+
+  /* Full width skills stacked vertically on small screens */
+  .skills {
+    flex: 0 0 100%;
+    height: 80px;
+  }
+
+  .skills img {
+    height: 60px;
+  }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
