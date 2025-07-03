@@ -16,8 +16,15 @@ export default function HeroSection(){
         <p>Aspiring Front-End Developer & UI/UX Enthusiast</p>
 
         <div className="hero-button">
-          <button className='download-btn'>Download Resume <i class="fa-solid fa-download"></i></button>
-          <button className='contact-btn'>Contact</button>
+          <a href="/Dipika-Resume.pdf" download>
+            <button className="download-btn">
+              Download Resume <i className="fa-solid fa-download"></i>
+            </button>
+          </a>
+          
+          <a href="#contact">
+            <button className="contact-btn">Contact</button>
+          </a>
         </div>
 
         {/* <Button variant="contained" endIcon={<FileDownloadIcon />} href='/assets/Resume.pdf'>Download Resume</Button>
@@ -30,15 +37,15 @@ export default function HeroSection(){
 
         <div className='hero-icon-wrapper'>
           <div className='hero-icon'>
-            <a href="mailto:maharjandipika49@gmail.com" target="_blank" rel="email">
+            <a href="mailto:maharjandipika49@gmail.com" target="_blank" rel="noopener noreferrer">
               <EmailIcon fontSize="large" />
             </a>
 
-            <a href="https://github.com/dipika-maharjan" target="_blank" rel="github">
+            <a href="https://github.com/dipika-maharjan" target="_blank" rel="noopener noreferrer">  {/* Use rel="noopener noreferrer" for security when using target="_blank" // - "noopener" prevents access to window.opener (protects your site) // - "noreferrer" hides the referrer info from the new tab */}
               <GitHubIcon fontSize="large" />
             </a>
 
-            <a href="https://www.linkedin.com/in/dipika-maharjan-50b019291/" target="_blank" rel="linkedin">
+            <a href="https://www.linkedin.com/in/dipika-maharjan-50b019291/" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon fontSize="large" />
             </a>
           </div>
