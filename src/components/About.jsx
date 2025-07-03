@@ -2,7 +2,7 @@ import '../styles/About.css';
 
 export default function About(){
     return(
-        <section className='about-container'>
+        <section id='about' className='about-container'>
 
             <div className="about-quote">
                 <p>“Where logic meets aesthetics — I craft every pixel with purpose <br></br>and every line of code with care to build experiences <br></br>that feel as effortless <br></br>as they look.”</p>

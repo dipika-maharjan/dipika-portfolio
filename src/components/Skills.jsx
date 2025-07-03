@@ -10,7 +10,7 @@ import githubImage from '../assets/images/github.png';
 
 export default function Skills(){
     return(
-        <section className="skills-container">
+        <section id='skills' className="skills-container">
             <div className="skills-heading">
                 <h3><i class="fa-solid fa-laptop-code"></i>Skills</h3>
                 <p>“Key skills and technologies I apply to bring ideas to life through intuitive design and code.”</p>
