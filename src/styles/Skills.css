@@ -98,10 +98,9 @@
     gap: 1rem 1.5rem;
   }
 
-  /* Full width skills stacked vertically on small screens */
   .skills {
-    flex: 0 0 100%;
-    height: 80px;
+    flex: 0 0 120px; 
+    height: 100px;   
   }
 
   .skills img {
