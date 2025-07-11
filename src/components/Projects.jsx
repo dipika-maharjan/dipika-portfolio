@@ -1,7 +1,7 @@
 import '../styles/Projects.css';
 import weatherImage from '../assets/images/weather.png';
 import interiorImage from '../assets/images/interior.png';
-import currencyImage from '../assets/images/currency.png';
+import codepenImage from '../assets/images/code-pen.JPG';
 import amazonImage from '../assets/images/amazon.png';
 import mentalhealthImage from '../assets/images/mentalhealth.png';
 import bmiImage from '../assets/images/bmi.png';
@@ -48,12 +48,12 @@ export default function Projects(){
 
                     <div className="project-box">
                         <div className='project-details'>
-                            <h4>Currency Converter</h4>
-                            <img src = {currencyImage} alt = "currency img"/>
-                            <p>A fun, interactive currency converter mini project to master core JavaScript logic and DOM manipulation.</p>
+                            <h4>Code-Pen</h4>
+                            <img src = {codepenImage} alt = "codepen img"/>
+                            <p>A minimal live code editor built with React, allowing users to write and preview HTML, CSS, and JavaScript code in real-time.</p>
                             <br></br>
-                            <p><strong>Tools Used:</strong> HTML, CSS, JavaScript</p>
-                            <a href="https://github.com/dipika-maharjan/Currency-Converter" target="_blank" rel="noopener noreferrer">
+                            <p><strong>Tools Used:</strong> React, Vite, CodeMirror</p>
+                            <a href="https://github.com/dipika-maharjan/code-pen" target="_blank" rel="noopener noreferrer">
                                 <button>View Project</button>
                             </a>
                         </div>
@@ -79,7 +79,7 @@ export default function Projects(){
                             <p>A mobile app prototype designed to promote mindful self-care called YouMatter.</p>
                             <br></br>
                             <p><strong>Tools Used:</strong> Figma, UX Research, Prototyping</p>
-                            <a href="https://www.figma.com/proto/1rhWS3uH0wiizhpqjYwILs/Mental-Health-App?node-id=46-12&starting-point-node-id=46%3A12&t=PhVdC0zi5Z8OBYHM-1https://www.figma.com/proto/1rhWS3uH0wiizhpqjYwILs/Mental-Health-App?node-id=46-12&starting-point-node-id=46%3A12&t=PhVdC0zi5Z8OBYHM-1" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.figma.com/proto/1rhWS3uH0wiizhpqjYwILs/Mental-Health-App?node-id=46-12&starting-point-node-id=46%3A12&t=PhVdC0zi5Z8OBYHM-1" target="_blank" rel="noopener noreferrer">
                                 <button>View Project</button>
                             </a>
                         </div>
