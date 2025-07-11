@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import heroImage from '../assets/images/heroImage.png';
+import dipikaImage from '../assets/images/dipika-image.png';
 
 export default function HeroSection(){
   return(
@@ -56,7 +56,7 @@ export default function HeroSection(){
       </div>
 
         <div className="hero-image">
-          <img src = {heroImage} alt = "hero image"/>
+          <img src = {dipikaImage} alt = "hero image"/>
         </div>
 
     </section>
