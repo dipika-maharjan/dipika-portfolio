@@ -37,7 +37,7 @@ export default function HeroSection(){
 
         <div className='hero-icon-wrapper'>
           <div className='hero-icon'>
-            <a href="mailto:maharjandipika49@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:maharjandipika49@gmail.com">
               <EmailIcon fontSize="large" />
             </a>
 
