@@ -5,6 +5,7 @@ import jsImage from '../assets/images/js.png';
 import reactImage from '../assets/images/react.png';
 import figmaImage from '../assets/images/figma.png';
 import githubImage from '../assets/images/github.png';
+import tailwindImage from '../assets/images/tailwind.png';
 
 
 
@@ -39,6 +40,10 @@ export default function Skills(){
 
                 <div className="skills">
                     <img src = {githubImage} alt='github image'/>
+                </div>
+
+                <div className="skills">
+                    <img src = {tailwindImage} alt='tailwind image'/>
                 </div>
             </div>
         </section>

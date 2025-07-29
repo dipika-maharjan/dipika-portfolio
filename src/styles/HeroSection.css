@@ -14,8 +14,6 @@
   background: linear-gradient(90deg, #DDE3E8 0%, #CBD0D3 100%);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-
-  animation: fadeInUp 0.8s ease forwards;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -36,27 +34,18 @@
   margin-top: 2.5rem;
   font-weight: 700;
   font-size: clamp(1rem, 4vw, 2rem); /* fluid font size */
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.2s; /* stagger */
 }
 
 .hero-content p {
   margin-bottom: 2rem;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: #333;
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.4s;
 }
 
 /* Buttons Container */
 .hero-button {
   display: flex;
   gap: 1rem;
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.6s;
 }
 
 /* Buttons Styling */
@@ -108,10 +97,6 @@
   margin-left: 10rem;
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(53, 122, 189, 0.3);
-
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.8s;
 }
 
 /* Hero Icon Wrapper */
@@ -122,10 +107,6 @@
   gap: 2rem;
   margin-top: 2rem;
   flex-wrap: nowrap;
-
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 1s;
 }
 
 .hero-icon {
@@ -191,14 +172,3 @@
   }
 }
 
-/* Animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
